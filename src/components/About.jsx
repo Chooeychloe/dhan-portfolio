@@ -29,12 +29,21 @@ const About = () => {
       data-aos="fade-up"
     >
       <h2 className="text-4xl font-bold mb-6 tracking-wide">About Me</h2>
-      <p className="text-lg leading-relaxed max-w-3xl mb-10">
-        Hello! I’m <span className="text-orange-400 font-bold">Dhan</span>, an instructor and developer based in the Philippines. I
-        specialize in building user-centric web and mobile applications using
-        technologies like Flutter and React. I love blending teaching with
-        software development to inspire and educate the next generation of coders.
+      <p className="text-lg leading-relaxed max-w-3xl mb-6">
+        Hello! I’m <span className="text-orange-400 font-bold">Dhan</span>, an
+        instructor and developer based in the Philippines. I specialize in
+        building user-centric web and mobile applications using technologies
+        like Flutter and React. I love blending teaching with software
+        development to inspire and educate the next generation of coders.
       </p>
+
+      <a
+        href="/edan-resume.pdf" // Make sure this file exists in your public folder
+        download
+        className="inline-block mb-10 bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition"
+      >
+        📄 Download Resume
+      </a>
 
       {/* Languages */}
       <div data-aos="fade-up" data-aos-delay="200" className="mb-10">
