@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header
       className="flex justify-between
-     items-center py-4 px-4 lg:px-20"
+     items-center py-4 px-4 lg:px-20 bg-orange-500"
     >
       <img
         src="/logo.png"
@@ -50,14 +50,15 @@ const Header = () => {
           CONTACT
         </a>
       </nav>
-      <button
+      <a
+        href="mailto:edan.belgica@cvsu.edu.ph"
         className="hidden md:block bg-[#a7a7a7] 
-      text-black py-3 px-8 rounded-full 
-      border-none font-medium transition-alls
-      duration-500 hover:bg-white cursor-pointer z-50"
+    text-black py-3 px-8 rounded-full 
+    border-none font-medium transition-all
+    duration-500 hover:bg-white cursor-pointer z-50"
       >
         LET'S TALK
-      </button>
+      </a>
       <button
         className="md:hidden text-3xl p-2 z-50"
         onClick={toggleMobileMenu}
@@ -70,7 +71,6 @@ const Header = () => {
       bg-black bg-opacity-70 backdrop-blur- md"
       >
         <nav className="flex flex-col gap-6 items-center">
-          
           <a
             data-aos="fade-left"
             data-aos-easing="linear"

@@ -3,7 +3,8 @@ import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   return (
-    <main id="home"
+    <main
+      id="home"
       className="flex lg:mt-20 flex-col
     lg:flex-row items-center justify-between
     min-h-[calc(90vh-6rem)]"
@@ -43,9 +44,10 @@ const Hero = () => {
         >
           I'm an instructor and developer passionate about crafting elegant
           software solutions and empowering future tech innovators through
-          education. <span className="italic">A dog lover also.</span>
+          education. <span className="italic text-orange-400">A dog lover also.</span>
         </p>
       </div>
+     
       <Spline
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"

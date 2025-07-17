@@ -10,3 +10,21 @@
     scroll-behavior: smooth;
   }
 }
+.swiper-pagination {
+  @apply mt-6 flex justify-center gap-2;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 rounded-full bg-gray-300 opacity-60 transition;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-orange-400 opacity-100;
+}
+.custom-swiper-pagination .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-white rounded-full opacity-60 transition;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  @apply bg-white opacity-100;
+}
