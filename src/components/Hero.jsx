@@ -1,5 +1,6 @@
 import "boxicons/css/boxicons.min.css";
 import Spline from "@splinetool/react-spline";
+import { TextMorph } from "@/components/ui/text-morph"
 
 const Hero = () => {
   return (
@@ -34,8 +35,13 @@ const Hero = () => {
           className="text-3xl sm:text-4xl md:text-5l lg:text-6xl font-semibold
         tracking-wider my-8"
         >
-          AN INSTRUCTOR &
-          <br />A DEVELOPER
+          <TextMorph
+            words={["A DEVELOPER", "A MENTOR", "A CREATOR"]}
+            interval={2000}
+            morphDuration={680}
+            className="text-4xl font-bold tracking-tight md:text-5xl"
+            
+          />
         </h1>
         <p
           data-aos="fade-left"
@@ -47,7 +53,7 @@ const Hero = () => {
           education. <span className="italic text-orange-400">A dog lover also.</span>
         </p>
       </div>
-     
+
       <Spline
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
